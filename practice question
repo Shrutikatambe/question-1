@@ -1,0 +1,102 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int row, i , j;
+    printf("Enter the number of rows: ");
+    scanf("%d",&row);
+
+    for (i =1; i<=row; i++)
+    {
+    for(j =1; j<= i; j++)
+    {
+    printf("%d", i);
+    }
+    printf("\n");
+    }
+    return 0;
+}
+
+Q16
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+  int n, i, sum = 0;
+  //input number from users
+  printf("Input number of terms: ");
+  scanf("%d", &n);
+
+  printf("the even numbers are: ");
+  //calculate their sum
+  for(i = 1; i<= n; i++)
+  {
+
+      printf("%d", 2 * i);
+      sum += 2 * i;
+  }
+  //sum of even natural numbers
+  printf("\nThe sum of even natural number up to %d terms: %d\n", n, sum);
+    return 0;
+}
+CONDITIONAL
+Q1
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+  int num1, num2;
+  // Input two integers from the user
+   printf("Enter the first integer: ");
+    scanf("%d", &num1);
+
+    printf("Enter the second integer: ");
+    scanf("%d", &num2);
+     // Check if the two integers are equal
+     if (num1 == num2)
+        {
+             printf("The two integers are equal.\n");
+     }
+     else
+        {
+            printf("The two integers are not equal.\n");
+     }
+    return 0;
+}
+
+Q14
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+ float side1, side2, side3;
+ // Input the lengths of the sides of the triangle
+ printf("Enter the lengths of three sides of the triangle: ");
+  scanf("%f %f %f", &side1, &side2, &side3);
+  // Check if the triangle is valid
+  if (side1 + side2 > side3 && side2 + side3 > side1 && side1 + side3 > side2)
+    {
+        // Check for equilateral triangle
+         if (side1 == side2 && side2 == side3)
+         {
+             printf("The triangle is equilateral.\n");
+  }
+   // Check for isosceles triangle
+   else if
+    (side1 == side2 || side2 == side3 || side1 == side3)
+    {
+        printf("The triangle is isosceles.\n");
+   }
+   // If the triangle is not equilateral or isosceles, it's scalene
+    else {
+            printf("The triangle is scalene.\n");
+    } }
+    else {
+            printf("The triangle is not valid.\n");
+    }
+    return 0;
+}
